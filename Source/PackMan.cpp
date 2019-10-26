@@ -5,6 +5,7 @@
 
 #include "PackMan.h"
 
+#include <memory.h>
 #include <assert.h>
 
 PackMan::PackMan()
