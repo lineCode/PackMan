@@ -1,4 +1,5 @@
-# PackMan
+# PackMan [![Build status](https://ci.appveyor.com/api/projects/status/nk32phaf1denfo8s?svg=true)](https://ci.appveyor.com/project/ProfessorCampi/packman)
+
 An open source virtual filesystem written in C++.
 
 # What is this?
