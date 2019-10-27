@@ -9,6 +9,8 @@
 #include <cppfs/FileHandle.h>
 #include <cppfs/FileIterator.h>
 
+#include <string.h>
+
 void DisplayUsage()
 {
     printf("Usage: PackManCMD pack <source> <destination>\n       PackManCMD extract <source> <destination>\n");
