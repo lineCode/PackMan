@@ -3,9 +3,18 @@ project (PackMan)
 
 # Include folder.
 include_directories (${CMAKE_CURRENT_SOURCE_DIR}/Include)
+include_directories (${CMAKE_CURRENT_SOURCE_DIR}/Vendor/cppfs/source/cppfs/include)
+
+# Libraries.
+option (BUILD_SHARED_LIBS OFF)
+option (OPTION_BUILD_TESTS OFF)
+
+add_subdirectory (${CMAKE_CURRENT_SOURCE_DIR}/Vendor/cppfs)
 
 # Command line executable.
 add_executable (PackManCMD Source/Main.cpp Source/PackMan.cpp Include/PackMan.h)
+
+target_link_libraries (PackManCMD cppfs)
 
 # Static library.
 add_library (PackMan Source/PackMan.cpp Include/PackMan.h)
